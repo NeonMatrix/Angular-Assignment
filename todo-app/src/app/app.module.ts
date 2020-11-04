@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ToDoListComponent } from './to-do-list/to-do-list.component'
+import { TasksService } from './tasks/tasks.service'
 
 
 @NgModule({
@@ -13,7 +14,9 @@ import { ToDoListComponent } from './to-do-list/to-do-list.component'
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    TasksService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
